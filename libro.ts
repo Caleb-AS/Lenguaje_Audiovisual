@@ -21,7 +21,7 @@ class BaseDeDatos {
     }
 }
 
-const libro = new Libro('El principito', 'Antoine de Saint-Exupery', 'Érase una vez...');
+const libro = new Libro('Caperucita Roja', 'Autor Desconocido', 'En un principio...');
 const baseDeDatos = new BaseDeDatos();
 
 baseDeDatos.guardarLibro(libro);
