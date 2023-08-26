@@ -1,4 +1,4 @@
-class Libro3 {
+class Libro2 {
     titulo: string;
     autor: string;
     contenido: string;
@@ -14,13 +14,13 @@ class Libro3 {
     }
 }
 
-class LibroDeTexto extends Libro3 {
+class LibroDeTexto extends Libro2 {
     mostrarDescripcion() {
         return `Libro de texto ${super.mostrarDescripcion()}`;
     }
 }
 
-class Novela extends Libro3 {
+class Novela extends Libro2 {
     genero: string;
 
     constructor(titulo: string, autor: string, contenido: string, genero: string) {
@@ -34,7 +34,7 @@ class Novela extends Libro3 {
 }
 
 const libroTexto = new LibroDeTexto('Principio de la Materia', 'Stephen Howking', 'Contenido...');
-const novela = new Novela('El Misterio en la Montaña', 'Alicia Johnson', 'Había una vez...', 'Misterio');
+const novela = new Novela('La Odisea', 'Homero', 'Erase una vez..', 'HIstoria');
 
 console.log(libroTexto.mostrarDescripcion());
 console.log(novela.mostrarDescripcion());
